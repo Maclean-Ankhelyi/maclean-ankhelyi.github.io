@@ -1,28 +1,32 @@
 //import '../';
 import { LinkIcon } from '@heroicons/react/20/solid'
+import { ArrowLeftIcon } from '@heroicons/react/20/solid'
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
-import AboutMe from './aboutme';
 import projects from '../data/staticData';
+import { Link } from "react-router-dom";
 
 function Projects() {
     return (
-        <div>
-            <div id="projects" className="lg:col-span-2 lg:col-start-2 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
-                <div className="lg:pr-4">
+        <div id="projects" >
+            <div className="lg:col-span-2 lg:col-start-2 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
+                <div className="lg:pr-4 p-12">
                     <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                        <h2 className="mt-10 text-2xl font-bold tracking-tight text-gray-900">Projects</h2>
+                        <div className="group flex h-6 ml-1 mt-2">
+                            <ArrowLeftIcon style={{marginTop: "0.5rem"}} className="mainFontColor translate-x-1 -translate-y-1 group-hover:delay-75 h-5 w-5 flex-none" aria-hidden="true" />
+                            <Link to="/" className="ml-1 mainFontColor font-medium text-black underline decoration-stone-100 decoration-2 hover:decoration-[#4F76D9]" href="" >Go Back</Link>
+                        </div>
+                        <h2 className="mainFontColor pt-6 sm:text-6xl text-4xl font-bold underline underline-offset-[6px] decoration-[3px]">PROJECTS</h2>
                         <ul role="list" className="">
                             {projects.map((project) => (
                                 <li className="flex justify-between py-5 rounded-md">
                                     <div className="flex gap-x-4 p-2">
                                         <div className="min-w-0 flex-auto">
                                             <div className="group flex transition ease-in-out delay-150 hover:scale-100 duration-300">
-                                                <a href={project.projectLink} target="_blank" className="group-hover:decoration-blue-200 projectLink text-md font-semibold leading-6 text-gray-900 bg-gradient-to-r from-purple-500 to-pink-500">{project.projectName}</a>
-{/*                                                 <LinkIcon className="translate-x-1 -translate-y-1 group-hover:translate-x-2 group-hover:-translate-y-2 group-hover:delay-75 mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
- */}                                            </div>
-                                            <p className="my-2 text-sm leading-5 text-gray-500">{project.projectDescription}</p>
+                                                <a href={project.projectLink} target="_blank" className="mainFontColor group-hover:bg-blue-500 group-hover:text-white projectLink text-md font-semibold leading-6 text-gray-900 underline underline-offset-[3px] decoration-[2px]">{project.projectName}</a>
+                                            </div>
+                                            <p className="mainFontColor my-2 text-sm leading-5 text-blue-300 opacity-75">{project.projectDescription}</p>
                                             {project.techUsed.map((e) => (
-                                                <span className="inline-flex m-1 items-center rounded-xl bg-pink-50 px-2 py-1 text-xs font-medium text-pink-600 ring-1 ring-inset ring-gray-500/10">{e}</span>
+                                                <span className="inline-flex m-1 items-center rounded-xl bg-orange-100 px-2 py-1 text-xs font-medium text-orange-500 ring-1 ring-inset ring-gray-500/10">{e}</span>
                                             ))}
                                         </div>
                                     </div>
@@ -33,10 +37,9 @@ function Projects() {
                             ))}
                         </ul>
                         <div className="group flex h-6 ml-1 mt-2">
-                            <a className="font-medium text-black underline decoration-stone-100 decoration-2 hover:decoration-pink-600" href="https://steady-sidewalk-8c5.notion.site/Project-Archives-edbb3866c86f44a392b8bb4fb15fbc42" type="application/pdf" target="_blank">View Project Archive</a>
-                            <ArrowSmallRightIcon style={{marginTop: "0.45rem"}} className="translate-x-1 -translate-y-1 group-hover:translate-x-2 group-hover:delay-75 h-5 w-5 flex-none text-pink-600" aria-hidden="true" />
+                            <a className="font-medium mainFontColor underline decoration-stone-100 decoration-2 hover:decoration-[#4F76D9]" href="https://steady-sidewalk-8c5.notion.site/Project-Archives-edbb3866c86f44a392b8bb4fb15fbc42" type="application/pdf" target="_blank">View Project Archive</a>
+                            <ArrowSmallRightIcon style={{marginTop: "0.5rem"}} className="translate-x-1 -translate-y-1 group-hover:translate-x-2 group-hover:delay-75 h-5 w-5 flex-none mainFontColor" aria-hidden="true" />
                         </div>
-                        <AboutMe></AboutMe>
                     </div>
                 </div>
             </div>

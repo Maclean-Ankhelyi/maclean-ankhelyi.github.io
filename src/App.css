@@ -37,25 +37,6 @@
   }
 }
 
-:root {
-  --link-hover: rgb(219, 39, 119, 0.9);
-}
-
-.projectLink {
-    background:
-    linear-gradient(
-      to bottom,
-      var(--link-hover) 0%,
-      var(--link-hover) 100%
-    );
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-    color: #000;
-    text-decoration: none;
-    transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;
-}
-
 .resumeLink {
     background:
     linear-gradient(
@@ -69,8 +50,4 @@
     color: #000;
     text-decoration: none;
     transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;
-}
-
-.projectLink:hover {
-  background-size: 4px 65%;
 }
