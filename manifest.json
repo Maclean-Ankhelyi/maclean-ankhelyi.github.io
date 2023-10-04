@@ -1,0 +1,15 @@
+{
+  "short_name": "Maclean Ankhelyi",
+  "name": "Welcome to my blog",
+  "icons": [
+    {
+      "src": "logo_ma.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
