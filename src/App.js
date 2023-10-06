@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function App() {
   return (
-      <div className="relative isolate px-6 lg:px-8">
+      <div className="relative isolate px-6 lg:px-8 sm:overflow-scroll">
         <div className="mx-auto max-w-[1440px] sm:pt-32 sm:pb-8 pt-40 pb-0">
           <div className="text-center">
             <span className="dot"></span>
