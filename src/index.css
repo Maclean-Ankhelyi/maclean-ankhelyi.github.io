@@ -15,6 +15,7 @@ body {
   background-color: #4F76D9;
   height: 100vh;
   padding: 0;
+  overflow: hidden;
 }
 
 code {
@@ -57,6 +58,10 @@ code {
   .title {
     bottom: 160px;
   }
+  .mainPage {
+    overflow: scroll !important;
+    height: 100vh;
+  }
 }
 
 #projects {
@@ -87,3 +92,4 @@ code {
 .mainFontColor {
   color: #4F76D9;
 }
+
