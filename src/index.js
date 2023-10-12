@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Projects from './components/projects';
+import Home from './components/home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-    <Route exact path="/projects" element={<Projects />}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />}/>
     </Routes>
     <React.StrictMode>
       <App />
