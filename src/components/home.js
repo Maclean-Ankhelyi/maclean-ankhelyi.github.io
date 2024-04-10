@@ -24,7 +24,7 @@ function Home() {
             </div>
             <div className="mt-10 flex items-center text-left text-white justify-start sm:justify-center gap-x-6 underline underline-offset-[3px] decoration-[1.5px]">
                 <ul>
-                  <li><a href="https://www.instagram.com/syphax_industries/" className="links text-2xl font-semibold leading-6">instagram</a></li>
+                  <li><a href="https://www.instagram.com/maclean_ankhelyi/" className="links text-2xl font-semibold leading-6">instagram</a></li>
                   <li><a href="https://www.linkedin.com/in/macleanankhelyi/" className="links text-2xl font-semibold leading-6">linkedin</a></li>
                   <li><a href="https://open.spotify.com/artist/0T0hZyGDStrkWMmySOVFZB?si=1Dhjb_V9T0af0MiHIAV4fQ" className="links text-2xl font-semibold leading-6">spotify</a></li>
                   <li><a href="https://soundcloud.com/syphax_sounds" className="links text-2xl font-semibold leading-6">soundcloud</a></li>
