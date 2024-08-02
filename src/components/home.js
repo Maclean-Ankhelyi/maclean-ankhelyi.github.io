@@ -19,7 +19,7 @@ function Home() {
             <div className="mt-10 flex items-center text-left text-white justify-start sm:justify-center gap-x-6 underline underline-offset-[3px] decoration-[1.5px]">
                 <ul>
                   <li><a href="https://Maclean-Ankhelyi.github.io/Resume_MacleanAnkhelyi_Growth.pdf" className="links text-2xl font-semibold leading-6">Resume</a></li>
-                  <li><Link to="https://chatter-cat-d40.notion.site/Maclean-s-Projects-4c8c722044c84b9cb05edb1cbf48f177" className="links text-2xl font-semibold leading-6">view projects</Link></li>
+                  <li><a href="https://chatter-cat-d40.notion.site/Maclean-s-Projects-4c8c722044c84b9cb05edb1cbf48f177" className="links text-2xl font-semibold leading-6">view projects</a></li>
                 </ul>
             </div>
             <div className="mt-10 flex items-center text-left text-white justify-start sm:justify-center gap-x-6 underline underline-offset-[3px] decoration-[1.5px]">
